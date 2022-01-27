@@ -1,0 +1,53 @@
+
+			===============================================
+			|                   DOCKER                    |
+			===============================================
+
+
+	- Qu'est-ce que Docker : 
+
+Docker est une plateforme logicielle de conteneurisation.
+Cette plateforme permet la création, le déployement et la gestion de containers.
+Compatible initialement sur les systèmes Linux, maintenant transposé sur les système Microsoft et Apple.
+
+
+	- Fonctionnement de Docker : 
+
+Docker repose sur plusieurs composantes : 
+ - Docker Engine : 
+ - Docker Hub : 
+ - Docker Compose : 
+ - Docker Swarm : 
+
+
+	- Avantages / Inconvéniants : 
+
+Avantages : 
+ - Portabilité, fléxibilité et modularité.
+ - Efficience (moins de ressources utilisés qu'une machine virtuelle).
+ - Déploiement rapide.
+ - Restauration.
+Inconvéniants : 
+ - Difficulté à gérer un grand nombre de containers en simultané.
+ - Problème de sécurité (containers isolés mais partageant tous le même OS).
+
+
+	- Cloud : 
+
+Docker est optimisé et en partenariat avec Microsoft Azure et Amazon AWS.
+
+
+	- Alternative :
+
+Docker est la plateforme de container la plus utilisé mais n'est pas la seule sur le marché.
+ - CoreOS rkt est son principal concurrent, avec un support SELinux pour le sécuriser.
+ - Virtuozzo OpenVZ est la plus ancienne plateforme de container.
+ - Canonical LXD est une autre plateforme majeure.
+
+
+	- Quid de la sécurité : 
+
+Divers problèmes de sécurité on déjà été reporté au sujet de containers :
+ - Malware : un malware de type crypto-jacking worm à déjà été détécté sur l'édition communautaire de Docker Engine. Utilisant des images mal sécurisées (corrompu) sur les serveurs.
+ - Cryptomining : des images Docker malveillantes utilisées pour le minage de cyptomonnaies (Monero) en détournant les ressources informatiques des entreprises.
+ - Faille : Docker a déjà rencontrer une fuite qui a exposé les données de plusieurs milliers d'utilisateurs après un accès non autorisé sur Docker Hub
