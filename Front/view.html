@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="utf-8">
+  <title>Biens Immo</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <script src="https://kit.fontawesome.com/3b09eafd21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2>Biens Immobilier</h2>
+    <ul class="link">
+      <li>
+        <a class="nav-links" href="login.html">Upload</a>
+      </li>
+      <li>
+        <a class="nav-links" href="view.html">View</a>
+      </li>
+    </ul>
+    <a class="nav-links" target="_blank" href="https://github.com/Strycnine/Biens_Immo_Web">Code Source <i class="fab fa-github"></i></a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="contr">
+
+    <h2>Analyses des données</h2>
+  </div>
+  <div class="upload_form_cont">
+    <h2>Nombre de biens sans balcon :</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre de biens : </th>
+          <th id="nb"></th>
+        </tr>
+      </thead>
+    </table>
+
+    <h2>Ecart type</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ecart type : </th>
+          <th id="ecart"></th>
+        </tr>
+      </thead>
+    </table>
+
+    <h2>Prix moyen des biens : </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ville</th>
+          <th>Prix moyen</th>
+        </tr>
+      </thead>
+      <tbody id=liste>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="JS/view.js" charset="utf-8"></script>
+
+</body>
+</html>

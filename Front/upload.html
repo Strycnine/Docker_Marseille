@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="utf-8">
+  <title>Biens Immo - Upload</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <script src="https://kit.fontawesome.com/3b09eafd21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2>Biens Immobilier</h2>
+    <ul class="link">
+      <li>
+        <a class="nav-links" href="login.html">Upload</a>
+      </li>
+      <li>
+        <a class="nav-links" href="view.html">View</a>
+      </li>
+    </ul>
+    <a class="nav-links" target="_blank" href="https://github.com/Strycnine/Biens_Immo_Web">Code Source <i class="fab fa-github"></i></a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="contr">
+    <h2>Veuillez uploader votre fichier CSV</h2>
+  </div>
+  <div class="upload_form_cont">
+    <form id="form" enctype="multipart/form-data" method="post" action="#">
+      <div>
+        <div>
+          <label for="file">Selectionnez votre CSV</label>
+        </div>
+        <div>
+          <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+          <input type="file" name="file" id="file" required accept=".csv"/>
+        </div>
+      </div>
+      <div>
+        <input type="submit" value="Upload"/>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="JS/upload.js" charset="utf-8"></script>
+
+</body>
+</html>
